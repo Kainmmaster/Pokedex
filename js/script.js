@@ -38,9 +38,9 @@ const renderPokemon = async (pokemon) => {
         pokemon_name.innerHTML = data.name;
         pokemon_number.innerHTML = data.id;
         pokemon_image.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-
-        input_search.value = '';
         searchPokemon = data.id;
+        input_search.value = '';
+        
     }
 
     else{
