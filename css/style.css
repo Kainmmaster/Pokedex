@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Pokemon GB';
+    src: url(GamegirlClassic-9MVj.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pokemon GB';
+}
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.Pokedex{
+    width: 100%;
+    max-width: 625px;
+}
+
+.pokemon_image{
+    width: 14%;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-225%, 30%);
+} 
+
+.card-pokemon{
+    position: absolute;
+    width: 31%;
+    height: 17%;
+    padding: 5% 10%;
+    border: 1px solid;
+    background-color: #152702;
+    top: 35%;
+    right: 9%;
+    border-radius: 5px;
+}
+
+
+.pokemon_data{
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    font-weight: 400;
+    color: #04f540;
+    font-size: clamp(7px , 2vw , 13px);
+}
+
+.pokemon_name{
+    display: flex;
+}
+
+.form{
+    position: absolute;
+    width: 35%;
+    top: 58%;
+    left: 58%;
+}
+
+.input_search{
+    width: 100%;
+    padding: 3%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #3a444d;
+    font-size: clamp(7px , 2vw , 13px);
+    box-shadow: -2px 2px 0 #3f3d3d, -3px 4px 0 #2c2c2c;
+}
+
+
+.buttons{
+    position: absolute;
+    top: 80%;
+    right: 11%;
+    transform: translate(16%, 10%);
+    width: 40%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button{
+    width: 40%;
+    padding: 0.5%;
+    border: 2px solid #333;
+    border-radius: 3px;
+    font-weight: 400;
+    box-shadow: -1px 1px 0 #3f3d3d, -2px 3px 0 #2c2c2c;
+    font-size: clamp(6px , 2vw , 13px);
+}
+
+.button:active{
+    box-shadow: inset -1px 1px 0 #3f3d3d;
+}
+
+/* @media(max-width:400px){} */
